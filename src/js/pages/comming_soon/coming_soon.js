@@ -20,10 +20,15 @@ const initCommingSoon = () => {
         const now = new Date();
         const leftUntil = endData - now;
 
-        let days = ( Math.floor(leftUntil / 1000 / 60 / 60 / 24) ) < 10 ? '0' + Math.floor(leftUntil / 1000 / 60 / 60 / 24) : Math.floor(leftUntil / 1000 / 60 / 60 / 24);
-        let hours = ( Math.floor(leftUntil / 1000 / 60 / 60) % 24 ) < 10 ? '0' + ( Math.floor(leftUntil / 1000 / 60 / 60) % 24 ) : Math.floor(leftUntil / 1000 / 60 / 60) % 24;
-        let minutes = ( Math.floor(leftUntil / 1000 / 60) % 60) < 10 ? '0' + ( Math.floor(leftUntil / 1000 / 60) % 60 ) : Math.floor(leftUntil / 1000 / 60) % 60;
-        let seconds = ( Math.floor(leftUntil / 1000) % 60 ) < 10 ? '0' + ( Math.floor(leftUntil / 1000) % 60 ) : Math.floor(leftUntil / 1000) % 60;
+        const daysMillisecond = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
+        const hoursMillisecond = Math.floor(leftUntil / 1000 / 60 / 60) % 24;
+        const minutesMillisecond = Math.floor(leftUntil / 1000 / 60) % 60;
+        const secondsMillisecond = Math.floor(leftUntil / 1000) % 60;
+
+        const days = daysMillisecond < 10 ? '0' + daysMillisecond : daysMillisecond;
+        const hours = hoursMillisecond < 10 ? '0' + hoursMillisecond : hoursMillisecond;
+        const minutes = minutesMillisecond < 10 ? '0' + minutesMillisecond : minutesMillisecond;
+        const seconds = secondsMillisecond < 10 ? '0' + secondsMillisecond : secondsMillisecond;
 
         daysElem.textContent = days;
         hourElem.textContent = hours;
