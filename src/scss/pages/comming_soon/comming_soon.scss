@@ -1,0 +1,60 @@
+.comming-soon {
+    background-color: #fafafa;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../../../img/comming_soon/pexels-oladimeji-ajegbile-2325729.jpg"); 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.timer {
+    background: #FFFFFF;
+    box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+    border-radius: 30px;
+    padding: 80px;
+
+    &__title {     
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        color:$black;
+        margin-bottom: 40px;
+    }
+
+    &__counter {
+        display: flex;
+        justify-content: space-between;       
+    }
+
+    &__item {
+
+    }
+
+    &__val {       
+        font-weight: bold;
+        min-width: 81px;
+        font-size: 70px;
+        line-height: 82px;
+        text-align: center;
+        color: $blue;
+    }
+
+    &__text {        
+        
+        font-size: 14px;        
+        text-align: center;
+        color: $black;
+    }
+
+    &__separator {     
+        font-weight: bold;
+        font-size: 48px;        
+        text-align: center;
+        color: $blue;
+        margin: 10px 30px;
+    }
+}
