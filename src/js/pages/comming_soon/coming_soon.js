@@ -1,5 +1,5 @@
 const initCommingSoon = () => {
-    const endData = new Date('Jan 1 2021 00:00:00');
+    const endData = new Date('2021-04-01T00:00:00');
 
     const daysElem = document.querySelector('.js-timer-days');
     const hourElem = document.querySelector('.js-timer-hour');

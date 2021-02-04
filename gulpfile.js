@@ -46,7 +46,7 @@ const path = {
 }
 
 // Меняем при разном режиме разработки
-const isDev = true;
+const isDev = false;
 
 //Конфиг для webpack
 const webConfig = {
